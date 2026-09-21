@@ -74,7 +74,7 @@ extract_fns: extract_fns_user_type = {
 module = ExtractUtilsModule(
     'mustang',
     'google',
-    device_rel_path='device/google/muzel/mustang',
+    device_rel_path='device/google/spacecraft/mustang',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,

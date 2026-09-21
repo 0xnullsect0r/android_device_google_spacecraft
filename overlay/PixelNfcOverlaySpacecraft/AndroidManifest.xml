@@ -4,9 +4,9 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.google.android.uwb.resources.pixel.muzel">
-    <overlay android:targetPackage="com.android.uwb.resources"
-             android:targetName="UwbCustomization"
+          package="com.google.android.nfc.overlay.spacecraft">
+    <overlay android:targetPackage="com.android.nfc"
+             android:targetName="NfcCustomization"
              android:isStatic="true"
              android:priority="0" />
 </manifest>

@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworkResOverlayProductMuzel",
+    name: "PixelNfcOverlaySpacecraft",
     product_specific: true,
 }

@@ -189,7 +189,7 @@ system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
 system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml
 
 # Plugin provider
-system_ext/framework/laguna-plugin-provider.jar
+system_ext/framework/malibu-plugin-provider.jar
 
 # Quick Share extension
 system_ext/bin/mosey_server
@@ -257,9 +257,9 @@ recovery/system/etc/init/android.hardware.boot-service.default_recovery-pixel.rc
 recovery/system/etc/vintf/manifest/android.hardware.boot-service.default_recovery-pixel.xml
 
 # Health HAL
-recovery/system/bin/hw/android.hardware.health-service.laguna_recovery
-recovery/system/etc/init/android.hardware.health-service.laguna_recovery.rc
-recovery/system/etc/vintf/manifest/android.hardware.health-service.laguna.xml:recovery/system/etc/vintf/manifest/android.hardware.health-service.laguna_recovery.xml
+recovery/system/bin/hw/android.hardware.health-service.malibu_recovery
+recovery/system/etc/init/android.hardware.health-service.malibu_recovery.rc
+recovery/system/etc/vintf/manifest/android.hardware.health-service.malibu.xml:recovery/system/etc/vintf/manifest/android.hardware.health-service.malibu_recovery.xml
 
 # USB firmware
 recovery/lib/firmware/usb_phy_fw.bin

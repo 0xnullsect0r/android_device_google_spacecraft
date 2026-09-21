@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "PixelUwbOverlayMT5Muzel",
+    name: "PixelUwbOverlayMT5Spacecraft",
     product_specific: true,
 }

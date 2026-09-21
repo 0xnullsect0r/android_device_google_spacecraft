@@ -4,9 +4,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.google.android.connectivity.resources.muzel">
-    <overlay android:targetPackage="com.android.connectivity.resources"
-             android:targetName="ServiceConnectivityResourcesConfig"
+          package="com.android.safetyregulatoryinfo.overlay.product.spacecraft">
+    <overlay android:targetPackage="com.android.safetyregulatoryinfo"
              android:isStatic="true"
-             android:priority="0" />
+             android:priority="1" />
 </manifest>

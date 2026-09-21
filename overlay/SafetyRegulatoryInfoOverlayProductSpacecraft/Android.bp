@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworkResOverlayVendorMuzel",
-    vendor: true,
+    name: "SafetyRegulatoryInfoOverlayProductSpacecraft",
+    product_specific: true,
 }

@@ -6,8 +6,8 @@
 #
 
 # Kernel
-TARGET_LINUX_KERNEL_VERSION := 6.6
-TARGET_KERNEL_DEVICE := muzel
+TARGET_LINUX_KERNEL_VERSION := 6.12
+TARGET_KERNEL_DEVICE := spacecraft
 TARGET_KERNEL_DIR := device/google/$(TARGET_KERNEL_DEVICE)-kernels/$(TARGET_LINUX_KERNEL_VERSION)
 TARGET_KERNEL_PLATFORM_SOURCE := google/gs-$(TARGET_LINUX_KERNEL_VERSION)
 
@@ -15,26 +15,26 @@ ifneq ($(TARGET_BOOTS_16K),true)
 PRODUCT_16K_DEVELOPER_OPTION := true
 endif
 
-# Inherit from laguna
-include device/google/laguna/common.mk
+# Inherit from malibu
+include device/google/malibu/common.mk
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworkResOverlayProductMuzel \
-    FrameworkResOverlayVendorMuzel \
-    PixelNfcOverlayMuzel \
-    SafetyRegulatoryInfoOverlayProductMuzel \
-    SystemUIGoogleOverlayVendorMuzel
+    FrameworkResOverlayProductSpacecraft \
+    FrameworkResOverlayVendorSpacecraft \
+    PixelNfcOverlaySpacecraft \
+    SafetyRegulatoryInfoOverlayProductSpacecraft \
+    SystemUIGoogleOverlayVendorSpacecraft
 
 PRODUCT_PACKAGES += \
-    ConnectivityResourcesOverlayMuzelOverride \
+    ConnectivityResourcesOverlaySpacecraftOverride \
     DMServiceOverlayVendorMustang \
     FrameworkResOverlayProductMustang \
     FrameworkResOverlayVendorMustang \
     PixelDisplayServiceOverlayProductMustang \
     PixelNfcOverlayMustang \
-    PixelUwbOverlayMT5Muzel \
-    PixelUwbOverlayRG5Laguna \
+    PixelUwbOverlayMT5Spacecraft \
+    PixelUwbOverlayRG5Malibu \
     PixelWifiOverlay2025Mustang \
     SettingsMustangOverlay \
     SystemUIGoogleOverlayVendorMustang
@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mustang.rc
 
 PRODUCT_PACKAGES += \
-    init.recovery.muzel.touch.rc
+    init.recovery.spacecraft.touch.rc
 
 # Satellite
 PRODUCT_COPY_FILES += \
@@ -70,7 +70,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     com.android.hardware.threadnetwork
 
-$(call soong_config_set,threadnetwork_apex,init_rc_namespace,device/google/muzel)
+$(call soong_config_set,threadnetwork_apex,init_rc_namespace,device/google/spacecraft)
 
 # VINTF
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \

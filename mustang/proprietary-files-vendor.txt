@@ -51,7 +51,7 @@ vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging
 vendor/bin/hw/android.hardware.gnss-service
 vendor/bin/hw/android.hardware.gnss-service.pixel
 vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging
-vendor/bin/hw/android.hardware.health-service.laguna
+vendor/bin/hw/android.hardware.health-service.malibu
 vendor/bin/hw/android.hardware.input.processor-service
 vendor/bin/hw/android.hardware.memtrack-service.pixel
 vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl
@@ -339,7 +339,7 @@ vendor/etc/init/android.hardware.contexthub-service.generic.rc
 vendor/etc/init/android.hardware.dumpstate.3-service.rc
 vendor/etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc
 vendor/etc/init/android.hardware.gxp.logging@service-gxp-logging.rc
-vendor/etc/init/android.hardware.health-service.laguna.rc
+vendor/etc/init/android.hardware.health-service.malibu.rc
 vendor/etc/init/android.hardware.input.processor-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@service-darwinn-aidl.rc
 vendor/etc/init/android.hardware.oemlock-service.citadel.rc
@@ -366,8 +366,8 @@ vendor/etc/init/drm_hwc3.rc
 vendor/etc/init/dump_power.rc
 vendor/etc/init/google.hardware.media.c2@3.0-service.rc
 vendor/etc/init/gpuflag.rc
-vendor/etc/init/hw/init.laguna.rc
-vendor/etc/init/hw/init.laguna.usb.rc
+vendor/etc/init/hw/init.malibu.rc
+vendor/etc/init/hw/init.malibu.usb.rc
 vendor/etc/init/hw/init.mustang.rc
 vendor/etc/init/hw/init.persist.rc
 vendor/etc/init/init.aoc.rc
@@ -408,7 +408,7 @@ vendor/etc/init/pixel-thermal-symlinks.rc
 vendor/etc/init/pixel-zram-comp-algorithm-experiment.rc
 vendor/etc/init/pixel.gralloc.allocator-service.rc
 vendor/etc/init/pixelmd.rc
-vendor/etc/init/pixelstats-vendor.laguna.rc
+vendor/etc/init/pixelstats-vendor.malibu.rc
 vendor/etc/init/pktrouter.rc
 vendor/etc/init/qfp-daemon.rc
 vendor/etc/init/rfsd.rc
@@ -516,7 +516,7 @@ vendor/etc/vintf/manifest/android.hardware.bluetooth.socket-service.pixel.xml
 vendor/etc/vintf/manifest/android.hardware.contexthub-service.generic.xml
 vendor/etc/vintf/manifest/android.hardware.dumpstate.3-service.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@lassen.xml
-vendor/etc/vintf/manifest/android.hardware.health-service.laguna.xml
+vendor/etc/vintf/manifest/android.hardware.health-service.malibu.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@service-darwinn-aidl.xml
 vendor/etc/vintf/manifest/android.hardware.oemlock-service.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.power-service.pixel.xml
@@ -1943,7 +1943,7 @@ vendor/firmware/gxp_ganymede_fw_core0
 vendor/firmware/gxp_ganymede_fw_core1
 vendor/firmware/gxp_ganymede_fw_core2
 vendor/firmware/kepler.bin
-vendor/firmware/laguna_pcie_phy_fw.bin
+vendor/firmware/malibu_pcie_phy_fw.bin
 vendor/firmware/qfs.app
 vendor/firmware/rdbl.img
 vendor/firmware/rgx.fw.signed.71.2.2448.1212
@@ -3364,7 +3364,7 @@ vendor/lib64/aconfig_gsc_flags_c_lib.so
 vendor/lib64/aconfig_ultrasonic_udfps_flags_c_lib.so
 vendor/lib64/android.hardware.authsecret-impl.nos.so
 vendor/lib64/android.hardware.oemlock-impl.nos.so
-vendor/lib64/android.hardware.power.stats-impl.laguna.so
+vendor/lib64/android.hardware.power.stats-impl.malibu.so
 vendor/lib64/android.hardware.power.stats-impl.pixel.so
 vendor/lib64/android.hardware.security.keymint-impl.nos.so
 vendor/lib64/android.hardware.weaver-bridge.nos.so

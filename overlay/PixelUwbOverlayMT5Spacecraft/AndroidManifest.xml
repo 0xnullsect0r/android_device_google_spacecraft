@@ -4,8 +4,9 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.android.safetyregulatoryinfo.overlay.product.muzel">
-    <overlay android:targetPackage="com.android.safetyregulatoryinfo"
+          package="com.google.android.uwb.resources.pixel.spacecraft">
+    <overlay android:targetPackage="com.android.uwb.resources"
+             android:targetName="UwbCustomization"
              android:isStatic="true"
-             android:priority="1" />
+             android:priority="0" />
 </manifest>

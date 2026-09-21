@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "ConnectivityResourcesOverlayMuzelOverride",
+    name: "FrameworkResOverlayProductSpacecraft",
     product_specific: true,
 }

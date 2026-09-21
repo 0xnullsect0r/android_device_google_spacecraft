@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/google/laguna/aosp_common.mk)
-$(call inherit-product, device/google/muzel/device-mustang.mk)
+$(call inherit-product, device/google/malibu/aosp_common.mk)
+$(call inherit-product, device/google/spacecraft/device-mustang.mk)
 
 PRODUCT_NAME := aosp_mustang
 PRODUCT_DEVICE := mustang

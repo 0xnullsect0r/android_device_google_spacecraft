@@ -1,6 +1,6 @@
 # Standard build output with vendor image build enabled
 apex/com.android.hardware.cas.apex
-apex/com.google.muzel.hardware.threadnetwork.apex
+apex/com.google.spacecraft.hardware.threadnetwork.apex
 bin/[
 bin/acpi
 bin/awk
@@ -252,8 +252,8 @@ etc/fstab.zram.50p-2g
 etc/fstab.zram.5g
 etc/fstab.zram.60p
 etc/fstab.zram.6g
-etc/fstab.laguna
-etc/fstab.laguna-fips
+etc/fstab.malibu
+etc/fstab.malibu-fips
 etc/group
 etc/init/android.hardware.drm-service.clearkey.rc
 etc/init/android.hardware.gatekeeper-service.trusty.rc

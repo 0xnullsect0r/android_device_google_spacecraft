@@ -9,7 +9,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 DEVICE_CODENAME := mustang
-DEVICE_PATH := device/google/muzel
+DEVICE_PATH := device/google/spacecraft
 VENDOR_PATH := vendor/google/mustang
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 

@@ -4,8 +4,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="android.overlay.product.muzel">
-    <overlay android:targetPackage="android"
+          package="com.android.systemui.overlay.vendor.spacecraft">
+    <overlay android:targetPackage="com.android.systemui"
              android:isStatic="true"
-             android:priority="1" />
+             android:priority="0" />
 </manifest>
