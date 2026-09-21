@@ -479,6 +479,8 @@ overlay/framework-res__kodiak__auto_generated_rro_vendor.apk
 
 overlay/NfcOverlayKodiakGsi.apk
 overlay/PixelNfcOverlayCommon.apk
+overlay/RilExtOverlayRRO.apk
+overlay/UwbOverlayPKK4/UwbOverlayPKK4Gsi.apk
 
 # Symlinks
 lib/modules

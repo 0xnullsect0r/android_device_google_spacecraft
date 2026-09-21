@@ -13,6 +13,7 @@ product/etc/CarrierSettings/a1_mk.pb
 product/etc/CarrierSettings/a1_rs.pb
 product/etc/CarrierSettings/a1_si.pb
 product/etc/CarrierSettings/a1mpn_at.pb
+product/etc/CarrierSettings/agms_us.pb
 product/etc/CarrierSettings/ahamo_jp.pb
 product/etc/CarrierSettings/airbus_de.pb
 product/etc/CarrierSettings/airbus_fr.pb
@@ -20,6 +21,7 @@ product/etc/CarrierSettings/airtel_in.pb
 product/etc/CarrierSettings/airtel_lk.pb
 product/etc/CarrierSettings/ais_th.pb
 product/etc/CarrierSettings/alcom_fi.pb
+product/etc/CarrierSettings/aldimobile_au.pb
 product/etc/CarrierSettings/alestra_mx.pb
 product/etc/CarrierSettings/aliv_bs.pb
 product/etc/CarrierSettings/alkafeel_iq.pb
@@ -119,6 +121,7 @@ product/etc/CarrierSettings/ct_mo.pb
 product/etc/CarrierSettings/ctm_mo.pb
 product/etc/CarrierSettings/cytamobile_cy.pb
 product/etc/CarrierSettings/default.pb
+product/etc/CarrierSettings/defensemobile_us.pb
 product/etc/CarrierSettings/dialog_lk.pb
 product/etc/CarrierSettings/digi_hu.pb
 product/etc/CarrierSettings/digi_it.pb
@@ -185,6 +188,7 @@ product/etc/CarrierSettings/gibtel_gi.pb
 product/etc/CarrierSettings/giffgaff_gb.pb
 product/etc/CarrierSettings/giga_sg.pb
 product/etc/CarrierSettings/gigs_gb.pb
+product/etc/CarrierSettings/gigsky_us.pb
 product/etc/CarrierSettings/globe_ph.pb
 product/etc/CarrierSettings/gomobile_mt.pb
 product/etc/CarrierSettings/google5glab_us.pb
@@ -274,6 +278,7 @@ product/etc/CarrierSettings/metropcs_us.pb
 product/etc/CarrierSettings/mettel_us.pb
 product/etc/CarrierSettings/miatel_ru.pb
 product/etc/CarrierSettings/mobi_us.pb
+product/etc/CarrierSettings/mobicom_mn.pb
 product/etc/CarrierSettings/mobifone_vn.pb
 product/etc/CarrierSettings/mobily_sa.pb
 product/etc/CarrierSettings/moldcell_md.pb
@@ -402,7 +407,6 @@ product/etc/CarrierSettings/sasktel_ca.pb
 product/etc/CarrierSettings/selam_tr.pb
 product/etc/CarrierSettings/setar_aw.pb
 product/etc/CarrierSettings/sfr_fr.pb
-product/etc/CarrierSettings/shaw_ca.pb
 product/etc/CarrierSettings/simba_sg.pb
 product/etc/CarrierSettings/siminn_is.pb
 product/etc/CarrierSettings/simple_us.pb
