@@ -16,6 +16,8 @@ dram_init_6.img;AB
 dram_init_7.img;AB
 dram_init_8.img;AB
 dram_init_9.img;AB
+dram_init_10.img;AB
+dram_init_11.img;AB
 dram_phy.img;AB
 gc.img;AB
 gdmc.img;AB

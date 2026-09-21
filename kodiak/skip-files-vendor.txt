@@ -29,7 +29,6 @@ bin/cpio
 bin/cut
 bin/date
 bin/dd
-bin/defrag.f2fs
 bin/devmem
 bin/df
 bin/diff
@@ -37,7 +36,6 @@ bin/dirname
 bin/dmesg
 bin/dos2unix
 bin/du
-bin/dump.f2fs
 bin/dumpsys
 bin/echo
 bin/egrep
@@ -52,7 +50,6 @@ bin/find
 bin/flock
 bin/fmt
 bin/free
-bin/fsck.f2fs
 bin/fsync
 bin/getconf
 bin/getenforce
@@ -73,8 +70,6 @@ bin/head
 bin/hostname
 bin/hw/android.hardware.drm-service.clearkey
 bin/hw/android.hardware.gatekeeper-service.trusty
-bin/hw/android.hardware.health.storage-service.default
-bin/hw/android.hardware.nfc-service.st
 bin/hw/android.hardware.secure_element-service.thales
 bin/hw/android.hardware.security.keymint-service.rust.trusty
 bin/hw/android.hardware.security.secretkeeper.trusty
@@ -149,7 +144,6 @@ bin/readlink
 bin/realpath
 bin/rebalance_interrupts-vendor
 bin/renice
-bin/resize.f2fs
 bin/restorecon
 bin/rm
 bin/rmdir
@@ -224,8 +218,6 @@ bin/xargs
 bin/xxd
 bin/yes
 bin/zcat
-boot_otas/boot_ota_16k.zip
-boot_otas/boot_ota_4k.zip
 build.prop
 etc/NOTICE.xml.gz
 etc/aconfig/flag.info
@@ -264,11 +256,8 @@ etc/init/android.hardware.sensors-service-multihal.rc
 etc/init/android.hardware.wifi.supplicant-service.rc
 etc/init/atrace_categories.rc
 etc/init/boringssl_self_test.rc
-etc/init/health-storage-default.rc
 etc/init/hostapd.android.rc
-etc/init/hw/init.efs.rc
 etc/init/init.pixel.rc
-etc/init/nfc-service-default.rc
 etc/init/pixel-mm-gki.rc
 etc/init/rebalance_interrupts-vendor.gs101.rc
 etc/init/vndservicemanager.rc
@@ -286,7 +275,6 @@ etc/permissions/android.hardware.camera.front.xml
 etc/permissions/android.hardware.camera.full.xml
 etc/permissions/android.hardware.camera.raw.xml
 etc/permissions/android.hardware.context_hub.xml
-etc/permissions/android.hardware.device_unique_attestation.xml
 etc/permissions/android.hardware.fingerprint.xml
 etc/permissions/android.hardware.hardware_keystore_V5.xml
 etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -348,7 +336,6 @@ etc/selinux/vendor_service_contexts
 etc/selinux/vendor_tee_service_contexts
 etc/selinux/vndservice_contexts
 etc/sysconfig/component-overrides.xml
-etc/sysconfig/kodiak-component-overrides.xml
 etc/vintf/compatibility_matrix.xml
 etc/vintf/manifest.xml
 etc/vintf/manifest/android.hardware.drm-service.clearkey.xml
@@ -359,8 +346,6 @@ etc/vintf/manifest/android.hardware.security.secretkeeper.trusty.xml
 etc/vintf/manifest/android.hardware.sensors-multihal.xml
 etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 etc/vintf/manifest/android.hardware.wifi.supplicant.xml
-etc/vintf/manifest/health-storage-default.xml
-etc/vintf/manifest/nfc-service-default.xml
 etc/wifi/wpa_supplicant.conf
 lib64/android.frameworks.stats-V1-ndk.so
 lib64/android.frameworks.stats-V2-ndk.so
@@ -373,8 +358,7 @@ lib64/android.hardware.drm-V2-ndk.so
 lib64/android.hardware.drm.common-V1-ndk.so
 lib64/android.hardware.gatekeeper-V1-ndk.so
 lib64/android.hardware.health-V4-ndk.so
-lib64/android.hardware.health.storage-V1-ndk.so
-lib64/android.hardware.nfc-V1-ndk.so
+lib64/android.hardware.nfc-V2-ndk.so
 lib64/android.hardware.power-V1-ndk.so
 lib64/android.hardware.power.stats-V2-ndk.so
 lib64/android.hardware.radio@1.0.so
@@ -424,7 +408,6 @@ lib64/libdmabufheap.so
 lib64/libeffects.so
 lib64/libeffectsconfig.so
 lib64/libenv_filter.dylib.so
-lib64/libext2_uuid.so
 lib64/libfmq.so
 lib64/libgatekeeper.so
 lib64/libhardware.so
@@ -447,7 +430,6 @@ lib64/libregex.dylib.so
 lib64/libregex_syntax.dylib.so
 lib64/libril.so
 lib64/librilutils.so
-lib64/libsparse.so
 lib64/libspeexresampler.so
 lib64/libssl.so
 lib64/libstagefright_foundation.so
@@ -461,7 +443,6 @@ lib64/libxml2.so
 lib64/libz.so
 lib64/mediacas/libclearkeycasplugin.so
 lib64/mediadrm/libdrmclearkeyplugin.so
-lib64/nfc_nci.st21nfc.default.so
 lib64/pixel-power-ext-V1-ndk.so
 lib64/server_configurable_flags.so
 lib64/soundfx/libaudiopreprocessing.so
@@ -473,7 +454,6 @@ lib64/soundfx/libdynamicsprocessingaidl.so
 lib64/soundfx/libdynproc.so
 lib64/soundfx/libeffectproxy.so
 lib64/soundfx/libhapticgenerator.so
-lib64/soundfx/libhapticgeneratoraidl.so
 lib64/soundfx/libldnhncr.so
 lib64/soundfx/libloudnessenhanceraidl.so
 lib64/soundfx/libreverbaidl.so
@@ -499,7 +479,6 @@ overlay/framework-res__kodiak__auto_generated_rro_vendor.apk
 
 overlay/NfcOverlayKodiakGsi.apk
 overlay/PixelNfcOverlayCommon.apk
-overlay/UwbOverlayMT5/UwbOverlayMT5Gsi.apk
 
 # Symlinks
 lib/modules
@@ -533,7 +512,6 @@ lib64/libtinyalsa.so
 lib64/libtinyalsav2.so
 
 # Audio
-etc/audio/config/default_volume_tables.xml
 lib64/android.hardware.audio.common-V5-ndk.so
 lib64/android.hardware.audio.core-V4-ndk.so
 lib64/android.hardware.audio.core.sounddose-V4-ndk.so
@@ -555,7 +533,6 @@ lib64/android.hardware.bluetooth.finder-V1-ndk.so
 lib64/android.hardware.bluetooth.lmp_event-V1-ndk.so
 lib64/android.hardware.bluetooth.ranging-V2-ndk.so
 lib64/android.hardware.bluetooth.socket-V2-ndk.so
-lib64/hardware.google.bluetooth.bt_channel_avoidance@1.0.so
 
 # Camera
 etc/sysconfig/vendor-apex-allowlist-lyric.xml
@@ -601,33 +578,24 @@ lib64/libdumpstateutil.so
 
 # GPS
 etc/permissions/android.hardware.location.gps.prebuilt.xml
-lib64/android.hardware.gnss-V3-ndk.so
-lib64/android.hardware.gnss.measurement_corrections@1.0.so
-lib64/android.hardware.gnss.measurement_corrections@1.1.so
-lib64/android.hardware.gnss.visibility_control@1.0.so
-lib64/android.hardware.gnss@1.0.so
-lib64/android.hardware.gnss@1.1.so
-lib64/android.hardware.gnss@2.0.so
-lib64/android.hardware.gnss@2.1.so
+lib64/android.hardware.gnss-V7-ndk.so
 lib64/libcurl.so
 lib64/liblzma.so
 lib64/libunwindstack.so
 
 # HIDL
 lib64/libhidltransport.so
-lib64/libhwbinder.so
 
 # Json
-lib64/libjson.so
 
 # Nos
-lib64/android.hardware.security.keymint-V3-ndk.so
+lib64/android.hardware.security.keymint-V4-ndk.so
 lib64/android.hardware.security.keymint-V5-ndk.so
 lib64/libcppbor.so
 lib64/libcppcose_rkp.so
 lib64/libkeymaster_messages.so
 lib64/libkeymaster_portable.so
-lib64/libkeymint_support_V3.so
+lib64/libkeymint_support_V4.so
 lib64/libnos.so
 lib64/libnos_client_citadel.so
 lib64/libnos_datagram.so
@@ -641,7 +609,6 @@ lib64/nos_app_weaver.so
 
 # Radio
 lib64/libnetutils.so
-lib64/libsqlite.so
 lib64/libziparchive.so
 
 # Sensors
@@ -694,35 +661,23 @@ lib64/android.hardware.oemlock-V1-ndk.so
 lib64/android.hardware.power-V2-ndk.so
 lib64/android.hardware.power-V7-ndk.so
 lib64/android.hardware.radio-V3-ndk.so
-lib64/android.hardware.radio.config-V3-ndk.so
-lib64/android.hardware.radio.config@1.0.so
-lib64/android.hardware.radio.config@1.1.so
-lib64/android.hardware.radio.config@1.2.so
+lib64/android.hardware.radio-V5-ndk.so
+lib64/android.hardware.radio.config-V5-ndk.so
 lib64/android.hardware.radio.data-V3-ndk.so
-lib64/android.hardware.radio.deprecated@1.0.so
-lib64/android.hardware.radio.messaging-V3-ndk.so
-lib64/android.hardware.radio.modem-V3-ndk.so
-lib64/android.hardware.radio.network-V3-ndk.so
+lib64/android.hardware.radio.messaging-V5-ndk.so
+lib64/android.hardware.radio.modem-V5-ndk.so
+lib64/android.hardware.radio.network-V5-ndk.so
 lib64/android.hardware.radio.sap-V1-ndk.so
-lib64/android.hardware.radio.sim-V3-ndk.so
-lib64/android.hardware.radio.voice-V3-ndk.so
-lib64/android.hardware.radio@1.2.so
-lib64/android.hardware.radio@1.3.so
-lib64/android.hardware.radio@1.4.so
-lib64/android.hardware.radio@1.5.so
-lib64/android.hardware.radio@1.6.so
+lib64/android.hardware.radio.sim-V5-ndk.so
+lib64/android.hardware.radio.voice-V5-ndk.so
 lib64/android.hardware.security.rkp-V3-ndk.so
 lib64/android.hardware.security.sharedsecret-V1-ndk.so
 lib64/android.hardware.security.timestamp-V1-ndk.so
 lib64/android.hardware.thermal-V2-ndk.so
 lib64/android.hardware.usb-V4-ndk.so
-lib64/android.hardware.usb.flags-aconfig-cc-lib.so
-lib64/android.hardware.usb.gadget-V2-ndk.so
-lib64/android.hardware.vibrator-V3-ndk.so
 lib64/android.hardware.weaver-V3-ndk.so
 lib64/com.google.hardware.pixel.display-V15-ndk.so
-lib64/com.google.hardware.pixel.display-V21-ndk.so
-lib64/hardware.google.ril_ext-V1-ndk.so
+lib64/hardware.google.ril_ext-V2-ndk.so
 lib64/pixel-power-ext-V2-ndk.so
 
 # Misc
@@ -734,8 +689,6 @@ lib64/libui.so
 lib64/libutilscallstack.so
 
 # Odex
-framework/oat/arm64/com.google.android.camera.experimental2025.odex
-framework/oat/arm64/com.google.android.camera.experimental2025.vdex
 
 # Rust
 lib64/libaconfig_storage_file.dylib.so
