@@ -4,5 +4,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_mustang.mk \
-    $(LOCAL_DIR)/lineage_mustang.mk
+    $(LOCAL_DIR)/aosp_kodiak.mk \
+    $(LOCAL_DIR)/lineage_kodiak.mk
