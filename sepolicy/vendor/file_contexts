@@ -1,2 +1,0 @@
-/vendor/bin/hw/init.h2omg.sh u:object_r:h2omg_vendor_exec:s0
-/vendor/bin/hw/vendor\.google\.google_battery.ekf.service u:object_r:hal_googlebattery_ekf_exec:s0
