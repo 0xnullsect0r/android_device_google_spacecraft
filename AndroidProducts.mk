@@ -4,9 +4,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_blazer.mk \
     $(LOCAL_DIR)/aosp_mustang.mk \
-    $(LOCAL_DIR)/aosp_frankel.mk \
-    $(LOCAL_DIR)/lineage_blazer.mk \
-    $(LOCAL_DIR)/lineage_mustang.mk \
-    $(LOCAL_DIR)/lineage_frankel.mk
+    $(LOCAL_DIR)/lineage_mustang.mk

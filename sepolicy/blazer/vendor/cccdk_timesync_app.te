@@ -1,3 +1,0 @@
-binder_call(cccdktimesync_app, hal_bluetooth_btlinux)
-
-allow cccdktimesync_app hal_bluetooth_coexistence_service:service_manager find;
